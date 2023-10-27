@@ -12,4 +12,4 @@ build-left:  ## (pristine) build firmware for left keyboard part
 		-d build/left \
 		-- \
 		-DSHIELD=lily58_left \
-		-DZMK_CONFIG=$(CURDIR)/lily58-config
+		-DZMK_CONFIG=$(CURDIR)/lily58/config

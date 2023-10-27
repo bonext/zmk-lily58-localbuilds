@@ -1,0 +1,160 @@
+[
+  {
+    "backcolor": "#ffffff",
+    "name": "lily58",
+    "switchMount": "cherry",
+    "pcb": false,
+    "plate": false
+  },
+  [
+    {
+      "t": "#000000\n\n#0048ff\n#ff0000",
+      "fa": [
+        0,
+        0,
+        0,
+        2,
+        0,
+        0,
+        4
+      ]
+    },
+    "\n\n\nBTCLR\n\n\nEsc",
+    "\n\n\nBT1\n\n\n1",
+    "\n\n\nBT2\n\n\n2",
+    "\n\n\nBT3\n\n\n3",
+    "\n\n\nBT4\n\n\n4",
+    "\n\n\nBT5\n\n\n5",
+    {
+      "x": 5,
+      "t": "#000000",
+      "a": 6,
+      "fa": [
+        4
+      ]
+    },
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "`~"
+  ],
+  [
+    {
+      "t": "#000000\n\n#0048ff\n#ff0000",
+      "a": 4,
+      "fa": [
+        4,
+        0,
+        2,
+        2,
+        0,
+        0,
+        4
+      ]
+    },
+    "\n\n`\nF1\n\n\nTab",
+    "\n\n1\nF2\n\n\nQ",
+    "\n\n2\nF3\n\n\nW",
+    "\n\n3\nF4\n\n\nE",
+    "\n\n4\nF5\n\n\nR",
+    "\n\n5\nF6\n\n\nT",
+    {
+      "x": 5
+    },
+    "\n\n6\nF7\n\n\nY",
+    "\n\n7\nF8\n\n\nU",
+    "\n\n8\nF9\n\n\nI",
+    "\n\n9\nF10\n\n\nO",
+    "\n\n0\nF11\n\n\nP",
+    "\n\n\nF12\n\n\n-_"
+  ],
+  [
+    "\n\nF1\n`\n\n\nCtrl",
+    "\n\nF2\n!\n\n\nA",
+    "\n\nF3\n@\n\n\nS",
+    "\n\nF4\n#\n\n\nD",
+    "\n\nF5\n$\n\n\nF",
+    "\n\nF6\n%\n\n\nG",
+    {
+      "x": 5
+    },
+    "\n\n\n^\n\n\nH",
+    "\n\n&larr;\n&\n\n\nJ",
+    "\n\n&darr;\n*\n\n\nK",
+    "\n\n&uarr;\n(\n\n\nL",
+    "\n\n&rarr;\n)\n\n\n;:",
+    "\n\n\n~\n\n\n'\""
+  ],
+  [
+    {
+      "y": -0.5,
+      "x": 6,
+      "t": "#000000",
+      "a": 6
+    },
+    "[{",
+    {
+      "x": 3
+    },
+    "]}"
+  ],
+  [
+    {
+      "y": -0.5,
+      "t": "#000000\n\n#0048ff\n#ff0000",
+      "a": 4
+    },
+    "\n\nF7\n\n\n\nShift",
+    "\n\nF8\nEP_ON\n\n\nZ",
+    "\n\nF9\nEP_OFF\n\n\nX",
+    "\n\nF10\nEP_TOG\n\n\nC",
+    "\n\nF11\n\n\n\nV",
+    "\n\nF12\n\n\n\nB",
+    {
+      "x": 5
+    },
+    "\n\n+\n\n\n\nN",
+    "\n\n-\n-\n\n\nM",
+    "\n\n=\n+\n\n\n,<",
+    "\n\n[\n{\n\n\n.>",
+    "\n\n]\n}\n\n\n/?",
+    "\n\n\\\n|\n\n\nShift"
+  ],
+  [
+    {
+      "x": 3,
+      "t": "#000000",
+      "a": 6
+    },
+    "Alt",
+    "Win",
+    {
+      "t": "#000000\n\n#0048ff\n#ff0000",
+      "a": 4
+    },
+    "\n\n\nLO",
+    {
+      "t": "#000000",
+      "a": 7
+    },
+    "",
+    {
+      "x": 3,
+      "a": 6
+    },
+    "Enter",
+    {
+      "t": "#000000\n\n#0048ff\n#ff0000",
+      "a": 4
+    },
+    "\n\nHI",
+    {
+      "t": "#000000",
+      "a": 6
+    },
+    "Bksp",
+    "Win"
+  ]
+]

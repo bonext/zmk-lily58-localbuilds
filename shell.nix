@@ -1,8 +1,9 @@
 let
-  pkgs = import <nixpkgs> { config = {}; overlays = []; };
+  pkgs = import (fetchTarball "channel:nixos-23.05") {};
 in
   pkgs.mkShell {
     packages = with pkgs; [
+      gnumake
       cmake
       dtc
       python311
