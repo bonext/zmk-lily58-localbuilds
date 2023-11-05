@@ -10,7 +10,27 @@ zephyr sdk installed via [official docs](https://docs.zephyrproject.org/3.2.0/de
 
     wget https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.15.0/zephyr-sdk-0.15.0_linux-x86_64.tar.gz
     wget -O - https://github.com/zephyrproject-rtos/sdk-ng/releases/download/v0.15.0/sha256.sum | shasum --check --ignore-missing
+    tar xvf zephyr-sdk-0.15.0_linux-x86_64.tar.gz
+    cd zephyr-sdk-0.15.0
+    ./setup.sh
+    
 
+## Current Flow
+
+    # download and unpack zephyr sdk (see above)
+    nix-shell
+    cd zmk
+    west init -l app/
+    west update
+    # iterate here
+    make build
+    # flash from zmk/app/build/{left|right}/zephyr/zmk.uf2
+
+    
 ## lily58
 
 ![layout](./lily58/lily58.png)
+
+## Links
+
+- [Cool Keymap Editor](https://nickcoutsos.github.io/keymap-editor/)

@@ -6,6 +6,7 @@ in
       gnumake
       cmake
       dtc
+      ninja
       python311
       python311Packages.west
       python311Packages.pyelftools
