@@ -3,7 +3,7 @@
 help:
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | awk 'BEGIN {FS = ":.*?## "}; {printf "\033[36m%-30s\033[0m %s\n", $$1, $$2}'
 
-build: build-left build-right # build both sides of keyboard firmware
+build: build-left build-right ## build both sides of keyboard firmware
 
 build-left:  ## (pristine) build firmware for left keyboard part
 	cd zmk/app; \
