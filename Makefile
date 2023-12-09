@@ -26,3 +26,9 @@ build-right:  ## (pristine) build firmware for right keyboard part
 		-- \
 		-DSHIELD=lily58_right \
 		-DZMK_CONFIG=$(CURDIR)/lily58/config
+
+update-zmk:  ## pull newest zmk code
+	git subtree pull \
+		--prefix zmk \
+		https://github.com/zmkfirmware/zmk.git main \
+		--squash
