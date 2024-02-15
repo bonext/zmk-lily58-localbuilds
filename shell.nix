@@ -51,6 +51,6 @@ in
     PROJECT_ROOT = builtins.toString ./.;
 
     shellHook = ''
-      source $PROJECT_ROOT/zephyr-sdk-0.15.0/environment-setup-x86_64-pokysdk-linux
+      source $PROJECT_ROOT/zephyr-sdk-0.16.3/environment-setup-x86_64-pokysdk-linux
     '';
   }
