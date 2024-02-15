@@ -302,7 +302,7 @@ static struct zmk_endpoint_instance get_selected_instance(void) {
     return instance;
 }
 
-static int zmk_endpoints_init(const struct device *_arg) {
+static int zmk_endpoints_init(void) {
 #if IS_ENABLED(CONFIG_SETTINGS)
     settings_subsys_init();
 
@@ -322,7 +322,7 @@ static int zmk_endpoints_init(const struct device *_arg) {
     return 0;
 }
 
-static void disconnect_current_endpoint() {
+static void disconnect_current_endpoint(void) {
     zmk_hid_keyboard_clear();
     zmk_hid_consumer_clear();
 #if IS_ENABLED(CONFIG_ZMK_MOUSE)
@@ -346,8 +346,7 @@ static void update_current_endpoint(void) {
         zmk_endpoint_instance_to_str(current_instance, endpoint_str, sizeof(endpoint_str));
         LOG_INF("Endpoint changed: %s", endpoint_str);
 
-        ZMK_EVENT_RAISE(
-            new_zmk_endpoint_changed((struct zmk_endpoint_changed){.endpoint = current_instance}));
+        raise_zmk_endpoint_changed((struct zmk_endpoint_changed){.endpoint = current_instance});
     }
 }
 

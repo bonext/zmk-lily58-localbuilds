@@ -21,13 +21,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Find test directories
         id: test-dirs
         run: |
           cd app/tests/ble
           export TESTS=$(ls -d * | grep -v central | jq -R -s -c 'split("\n")[:-1]')
-          echo "::set-output name=test-dirs::${TESTS}"
+          echo "test-dirs=${TESTS}" > $GITHUB_OUTPUT
   run-tests:
     needs: collect-tests
     strategy:
@@ -35,12 +35,12 @@ jobs:
         test: ${{ fromJSON(needs.collect-tests.outputs.test-dirs) }}
     runs-on: ubuntu-latest
     container:
-      image: docker.io/zmkfirmware/zmk-build-arm:3.2
+      image: docker.io/zmkfirmware/zmk-build-arm:3.5
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Cache west modules
-        uses: actions/cache@v3.0.2
+        uses: actions/cache@v4
         env:
           cache-name: cache-zephyr-modules
         with:
@@ -69,10 +69,10 @@ jobs:
         run: make everything
       - name: Test ${{ matrix.test }}
         working-directory: app
-        run: BSIM_COMPONENTS_PATH="${GITHUB_WORKSPACE}/tools/bsim/components/" BSIM_OUT_PATH="${GITHUB_WORKSPACE}/tools/bsim/" ./run-ble-test.sh tests/ble/${{ matrix.test }}
+        run: BSIM_COMPONENTS_PATH="${GITHUB_WORKSPACE}/tools/bsim/components" BSIM_OUT_PATH="${GITHUB_WORKSPACE}/tools/bsim" ./run-ble-test.sh tests/ble/${{ matrix.test }}
       - name: Archive artifacts
         if: ${{ always() }}
-        uses: actions/upload-artifact@v2
+        uses: actions/upload-artifact@v4
         with:
-          name: "log-files"
+          name: "${{ matrix.test }}-log-files"
           path: app/build/**/*.log
