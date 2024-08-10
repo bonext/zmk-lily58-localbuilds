@@ -108,7 +108,7 @@
                         &trans &trans     &trans     &trans      &trans       &trans                      &trans  &trans       &trans      &trans     &trans        &trans
                         &trans &hm LGUI A &hm LALT S &hm LCTRL D &hm LSHIFT F &trans                      &trans  &hm RSHIFT J &hm RCTRL K &hm RALT L &hm RGUI SEMI &trans
                         &trans &trans     &trans     &trans      &trans       &trans   &trans     &trans  &trans  &trans       &trans      &trans     &trans        &trans
-                                                     &trans      &trans       &mo 1    &trans     &trans  &mo 2   &trans       &trans
+                                                     &trans      &trans       &trans   &trans     &trans  &trans  &trans       &trans
             >;
         };
     };
