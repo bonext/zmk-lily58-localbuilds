@@ -32,10 +32,13 @@ zephyr sdk installed via [official docs](https://docs.zephyrproject.org/3.2.0/de
     # flash from zmk/app/build/{left|right}/zephyr/zmk.uf2
 
     
-## lily58
+## lily58 (home-row mods edition)
 
-![layout](./lily58/lily58.png)
+![layout](./lily58/lily58.svg)
 
 ## Links
 
-- [Cool Keymap Editor](https://nickcoutsos.github.io/keymap-editor/)
+- [Home Row Mods](https://precondition.github.io/home-row-mods)
+  - Note: for ZMK [mod-tap](https://zmk.dev/docs/behaviors/mod-tap) is `hold-preferred`, but QMK default is `tap-preferred` (as mentioned in [ZMK docs](https://zmk.dev/docs/behaviors/hold-tap#comparison-to-qmk)).
+- [Keymap Drawer](https://keymap-drawer.streamlit.app)
+- [Keymap Editor](https://nickcoutsos.github.io/keymap-editor/)
