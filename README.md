@@ -1,3 +1,9 @@
+# ARCHIVED
+
+Configurations moved to https://github.com/bonext/zmk-configs
+
+---
+
 # Self-Contained ZMK Firmware Builds
 
 Under construction.
